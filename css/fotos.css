@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,600;1,9..40,600&family=DM+Serif+Display:ital@0;1&family=Kdam+Thmor+Pro&display=swap');
+
+* { margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    background-color: black;
+}
+
+header { height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+}
+
+nav { display: none;
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+li:hover {
+    color: #d21617;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+}
+
+#fotos-container { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+.fotos {
+    width: 95%;
+    height: 300px;
+    background-color: aliceblue;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.banner1 {
+    background-image: url('https://s3.us-west-1.amazonaws.com/esdelatino.com/wp-content/uploads/2024/11/18033851/El-Universo-de-Batman-Explicado.jpg');
+
+}
+
+.banner2 {
+    background-image: url('https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2022/01/batman-2596985.jpg?tf=3840x');
+}
+
+.banner3 {
+    background-image: url('https://i0.wp.com/www.cinemadebuteco.com.br/wp-content/uploads/2022/03/Captura-de-Tela-2022-03-03-a%CC%80s-20.11.08.png?resize=750%2C468&ssl=1');
+}
+
+.banner4 {
+    background-image: url('https://sgsonfilm.net/wp-content/uploads/2022/03/the-batman-pattinson.png');
+}
+
+.banner5 {
+    background-image: url('https://cinemundo.com.br/wp-content/uploads/2022/03/BAT6.jpeg');
+}
+
+.banner6 {
+    background-image: url('https://www.tribunapr.com.br/wp-content/uploads/sites/56/2022/02/28121731/rev-1-TBM-11721r_High_Res_JPEG.jpeg');
+}
+
+footer {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+   
+}  
+
+.text-footer {
+    color: #fff;
+    font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+.footer-nav {
+    display: block; 
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(min-width: 480px) {
+    #fotos-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(min-width: 768px) {
+    nav {
+        display: block;
+    }
+
+    .footer-nav {
+        display: none;
+    }
+
+    #fotos-container {
+        margin-left: 25px;
+}
+}

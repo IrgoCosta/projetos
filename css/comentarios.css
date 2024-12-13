@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,600;1,9..40,600&family=DM+Serif+Display:ital@0;1&family=Kdam+Thmor+Pro&display=swap');
+
+* { margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    
+}
+
+body {
+    background-color: black;
+}
+
+header { height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+nav { display: none;
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+li:hover {
+    color: #d21617;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+}
+
+.comentarios{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Kdam Thmor Pro", sans-serif;
+    
+    
+    
+}
+
+#comentario-container {
+    width: 100%;
+   display: grid;
+   grid-template-columns: 1fr;
+   justify-items: center;
+   gap: 30px;
+   margin: 15px;
+}
+
+.comentarios i {
+    font-size: 50px;
+    color: #dfdfdf;
+}
+
+.comentario-txt{
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.slide {
+    padding: 20px;
+    background-color: aliceblue;
+    border-radius: 20px;
+}
+
+.person {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.slide .person img {
+    width: 80px;
+    height: 80px;
+}
+
+.nome-person{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.idade-person {
+    font-size: 14px;
+    
+}
+
+footer {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+}  
+
+.text-footer {
+    color: #fff;
+    font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+.footer-nav {
+    display: block; 
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(min-width: 480px){
+    .footer-nav {
+        display: none;
+    }
+
+    nav {
+        display: block;
+    }
+}
